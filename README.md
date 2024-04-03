@@ -1,0 +1,1 @@
+I added onclick on the Log In form, then invoked with the id. I then addedd conditional statement that if the user input the wrong password/username that didn't match, then i could not get into the next HTML part.
