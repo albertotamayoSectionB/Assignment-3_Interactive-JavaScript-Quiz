@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canadian Citizenship Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="loginContainer">
+      <div>
+        <h1>Canadian Citizenship Test</h1>
+        <h4>Log In</h4>
+        <form id="loginForm">
+          <label for="username">Username:</label><br>
+          <input type="text" id="username" name="username"><br>
+          <label for="password">Password:</label><br>
+          <input type="password" id="password" name="password"><br><br>
+          <button type="button" onclick="authenticate()">Login</button>
+        </form>
+        <div>
+          <p class="sample_LogIn">Sample Login</p>
+          <p class="sample_LogIn">Username: <i>Humber</i></p>
+          <p class="sample_LogIn">Password: <i>Prof</i></p>
+        </div>
+      </div>
+      </div>
+      
+      <section class="container hidden" id="quizContainer">
+        <h1>Canadian Citizen Test</h1>
+        <!--question 1 -->
+        <article class="question" id="question1">
+          <p>1. Canada has three territories and how many provinces? </p>
+          <div class="options">
+            <input type="radio" name="q1" value="7"> 7<br>
+            <input type="radio" name="q1" value="12"> 12<br>
+            <input type="radio" name="q1" value="10"> 10<br>
+          </div>
+        </article>
+        <!--question 2-->
+        <article class="question" id="question2">
+          <p>2. What are the three branch of the Government of Canada?</p>
+          <div class="options">
+            <input type="radio" name="q2" value="The Upper House, The House of Common, and the Supreme Court of Canada"> The Upper House, The House of Common, and the Supreme Court of Canada<br>
+            <input type="radio" name="q2" value="Executive, Legislative, and Judicial"> Executive, Legislative, and Judicial<br>
+            <input type="radio" name="q2" value="Executive, Cabinets, and Judicial"> Executive, Cabinets, and Judicial <br>
+          </div>
+        </article>
+        <!--question 3-->
+        <article class="question" id="question1">
+          <p>3. Who is the <i>His Majesty</i> representative of Canada? </p>
+          <div class="options">
+            <input type="radio" name="q3" value="Mary Simon"> Mary Simon<br>
+            <input type="radio" name="q3" value="Justin Trudeau"> Justin Trudeau<br>
+            <input type="radio" name="q3" value="Richard Wagner"> Richard Wagner<br>
+          </div>
+        </article>
+        <!--question 4-->
+        <article class="question" id="question1">
+          <p>4. How are senators chosen? </p>
+          <div class="options">
+            <input type="radio" name="q4" value="Appointed by the Governor General according to the advise of the Prime Minister"> Appointed by the Governor General according to the advise of the Prime Minister<br>
+            <input type="radio" name="q4" value="Appointed by the Supreme Court of Canada"> Appointed by the Supreme Court of Canada<br>
+            <input type="radio" name="q4" value="Elected by Canadian Citizens"> Elected by Canadian Citizens<br>
+          </div>
+        </article>
+        <!--question 5-->
+        <article class="question" id="question1">
+          <p>5. Who is the <i>His Majesty</i> opposition of Federal Government of Canada? </p>
+          <div class="options">
+            <input type="radio" name="q5" value="Pierre Poilievre"> Pierre Poilievre<br>
+            <input type="radio" name="q5" value="Justin Trudeau"> Yves-François Blanchet<br>
+            <input type="radio" name="q5" value="Jagmeet Singh"> Jagmeet Singh<br>
+          </div>
+        </article>
+        <!--question 6-->
+        <article class="question" id="question1">
+          <p>6. What happened at the Battle of the Plains of Abraham? </p>
+          <div class="options">
+            <input type="radio" name="q6" value="The US invaded Canada and failed. As a result, Canada and the Britain attacked and burned down the White House in Washington DC"> The US invaded Canada and failed. As a result, Canada and the Britain attacked and burned down the White House in Washington DC<br>
+            <input type="radio" name="q6" value="The British prevailed to end French Empire in America"> The British prevailed to end French Empire in America<br>
+            <input type="radio" name="q6" value="The Upper Canada (Ontario) and the Lower Canada (Quebec) became one country to end the battlefield in 1831"> The Upper Canada (Ontario) and the Lower Canada (Quebec) became one country to end the battlefield in 1831<br>
+          </div>
+        </article>
+        <!--question 7-->
+        <article class="question" id="question1">
+          <p>7. What part of the Constitution legally protects the basic rights and freedoms of all Canadians?</p>
+          <div class="options">
+            <input type="radio" name="q7" value="The British Charter Rights and Freedoms"> The British Charter Rights and Freedoms<br>
+            <input type="radio" name="q7" value="Right to Bear Arms"> Right to Bear Arms<br>
+            <input type="radio" name="q7" value="The Canadian Charter of Rights and Freedoms"> The Canadian Charter of Rights and Freedoms<br>
+          </div>
+        </article>
+        <!--question 8-->
+        <article class="question" id="question1">
+          <p>8. What year was the confederation?</p>
+          <div class="options">
+            <input type="radio" name="q8" value="1867"> 1867<br>
+            <input type="radio" name="q8" value="1801"> 1801<br>
+            <input type="radio" name="q8" value="1964"> 1964<br>
+          </div>
+        </article>
+        <!--question 9-->
+        <article class="question" id="question1">
+          <p>9. When must federal election be held?</p>
+          <div class="options">
+            <input type="radio" name="q9" value="Every 4 years from recent election"> Every 4 years from recent election<br>
+            <input type="radio" name="q9" value="On the third monday in October every four years from recent election"> On the third monday in October every four years from recent election<br>
+            <input type="radio" name="q9" value="If King Charles decides to call for election"> If King Charles decides to call for election<br>
+          </div>
+        </article>
+        <!--question 10-->
+        <article class="question" id="question1">
+          <p>10. Which animal is an official symbol of Canada?</p>
+          <div class="options">
+            <input type="radio" name="q10" value="Piranha"> Piranha<br>
+            <input type="radio" name="q10" value="Cow"> Cow<br>
+            <input type="radio" name="q10" value="Beaver"> Beaver<br>
+          </div>
+        </article>
+        <button onclick="submitQuiz()">Submit</button>
+        <div class="feedback" id="feedback"></div>
+        <div class="score hidden" id="score"></div>
+      </section>
+    <script src="script.js"></script>
+</body>
+</html>
